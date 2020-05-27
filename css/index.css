@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Exo+2:wght@400;700&display=swap');
 
 :root {
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Exo 2', sans-serif;
     --main-color: #ffffff;
 }
 h1, h2, p, ul {
@@ -14,18 +14,23 @@ body {
     margin: auto;
 }
 
+/*Заголовок (header)*/
 header {
+    display: block;
     background-color: green;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    line-height: 40px;
 }
 
 header .logo {
-    font-family: 'Bilbo Swash Caps', cursive;
+    font-family: 'Bad Script', cursive;
     text-decoration: none;
-    display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 25px;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding-top: 15px;
 }
 
 header nav .top-menu {
@@ -33,6 +38,7 @@ header nav .top-menu {
     list-style-type: none;
     justify-content: space-around;
     margin-top: 10px;
+    font-size: 1rem;
 }
 
 header .logo a,
@@ -42,6 +48,13 @@ header nav .top-menu li a {
     
 }
 
-header .delivery {
-    
+header button {
+   margin-top: 15px;
+   font-size: 1.2rem;
+   padding: 5px 10px 5px 10px;
+   border: 3px solid #d6b600;
+   border-radius: 55px;
+   font-weight: bold;
+   font-family: 'Bad Script', cursive;
 }
+/* Основна частина (main) */
