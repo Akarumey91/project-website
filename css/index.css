@@ -2,8 +2,8 @@
 
 :root {
     font-family: 'Exo 2', sans-serif;
-    --text-color: #ffffff;
     --main-color: green;
+    --text-color: #F5F5C6;
 }
 h1, h2, p, ul {
     margin: 0;
@@ -13,6 +13,7 @@ h1, h2, p, ul {
 body {
     max-width: 980px;
     margin: auto;
+    color: var(--text-color);
 }
 
 /*Заголовок (header)*/
@@ -94,3 +95,76 @@ header button {
     }
 }
 /* Основна частина (main) */
+    /* Банер (baner) */
+main .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/banner-photo.jpeg);
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+main .banner h2 {
+    font-size: 40px;
+    font-family: 'Exo 2', sans-serif;
+    color: var(--text-color);
+}
+    /* Розділ про нас (about us) */
+main .about-us {
+    display: flex;
+    background-color: var(--main-color);
+    flex-direction: column;
+    padding: 20px;
+    
+}
+main .about-us img {
+    display: block;
+    width: 100%;
+}
+main .about-us h2 {
+    margin-top: 30px;
+}
+
+main .about-us p {
+    text-align: left;
+    padding: 10px 0 10px 0;
+    line-height: 1.5;
+}
+
+    /* Гарячі пропозиції (hot deals) */
+main .hot-deals {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/hot-deals.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+main .hot-deals h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+main .hot-deals p {
+    margin-top: 10px;
+}
+
+main .hot-deals .hot-deal {
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+}
+
+main .hot-deals .hot-deal .burger {
+    background-color: #BE821B;
+}
+
+main .hot-deals img {
+    display: block;
+    width: 100%;
+}
