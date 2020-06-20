@@ -1,129 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Exo+2:wght@400;700&display=swap');
-
-:root {
-    font-family: 'Exo 2', sans-serif;
-    --main-color: green;
-    --text-color: #F5F5C6;
-}
-h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    max-width: 980px;
-    margin: auto;
-    color: var(--text-color);
-}
-
-/*Заголовок (header)*/
-header {
-    display: block;
-    background-color: green;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    line-height: 45px;
-    
-}
-
-header .logo {
-    font-family: 'Bad Script', cursive;
-    text-decoration: none;
-    justify-content: center;
-    text-align: center;
-    font-size: 3rem;
-}
-
-header nav .top-menu {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-header .logo a,
-header nav .top-menu li a {
-    text-decoration: none;
-    color: var(--text-color);
-    
-}
-
-header button {
-   font-size: 1.1rem;
-   padding: 5px 10px 5px 10px;
-   border: 3px solid #d6b600;
-   border-radius: 55px;
-   font-weight: bold;
-   font-family: 'Bad Script', cursive;
-}
-
-@media (min-width: 660px) {
-    header {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        padding: 35px 20px;
-    }
-
-    header .logo {
-        text-align: left;
-        padding-left: auto;
-    }
-    header nav .top-menu li {
-        margin: 0 5px;
-    }
-    
-    header button {
-        padding: 0 5px;
-    }
-}
-
-@media (min-width: 810px) {
-    header {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        padding: 35px 20px;
-    }
-    header .logo {
-        text-align: left;
-        padding-left: auto;
-    }
-    
-    header button {
-        padding: 0 5px;
-    }
-}
 /* Основна частина (main) */
-    /* Банер (baner) */
-main .banner {
+main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-image: url(../img/banner-photo.jpeg);
-    min-height: 400px;
-    background-position: center;
-    background-size: cover;
+    font-family: 'Exo 2', sans-serif;
 }
 
-main .banner h2 {
-    font-size: 40px;
+/* Банер (baner) */
+main .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 50px;
     font-family: 'Exo 2', sans-serif;
     color: var(--text-color);
+    font-weight: bold;
 }
-    /* Розділ про нас (about us) */
+
+main .carousel .carousel-inner .carousel-item {}
+
+/* Розділ про нас (about us) */
 main .about-us {
     display: flex;
-    background-color: var(--main-color);
+    background: linear-gradient(-13deg, #000, var(--main-color));
     flex-direction: column;
     padding: 20px;
-    
+
 }
+
 main .about-us img {
     display: block;
     width: 100%;
 }
+
 main .about-us h2 {
     margin-top: 30px;
 }
@@ -134,22 +39,45 @@ main .about-us p {
     line-height: 1.5;
 }
 
-    /* Гарячі пропозиції (hot deals) */
+@media (min-width: 768px) {
+    main .about-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+    }
+
+    main .about-us img {
+        max-width: 400px;
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+
+    main .about-us h2 {
+        grid-column: 2;
+        grid-row: 1;
+        margin-left: 30px;
+    }
+
+    main .about-us p {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 30px;
+    }
+}
+
+/* Гарячі пропозиції (hot deals) */
 main .hot-deals {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    flex-direction: column;
-    align-items: center;
     background-image: url(../img/hot-deals.jpeg);
     background-position: center;
     background-size: cover;
+    text-align: center;
 }
 
 main .hot-deals h2 {
     font-size: 2rem;
     margin-top: 40px;
 }
+
 main .hot-deals p {
     margin-top: 10px;
 }
@@ -157,14 +85,75 @@ main .hot-deals p {
 main .hot-deals .hot-deal {
     padding: 20px;
     text-align: center;
-    max-width: 200px;
+    margin: 20px;
 }
 
-main .hot-deals .hot-deal .burger {
-    background-color: #BE821B;
+main .hot-deals .burger {
+    background: linear-gradient(41deg, #000000, #BE821B);
+    border-radius: 10px;
+}
+
+main .hot-deals .rack-of-lamb {
+    background: linear-gradient(-53deg, #000000, #C51713);
+    border-radius: 10px;
+}
+
+main .hot-deals .ramen {
+    background: linear-gradient(-32deg, #000000, #1E7115);
+    border-radius: 10px;
 }
 
 main .hot-deals img {
     display: block;
     width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+main .hot-deal h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+main .hot-deal span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+main .hot-deal p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+main .hot-deal button {
+    margin-top: 25px;
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+main .hot-deal button:hover {
+    background-color: #e2d411;
+    color: #fff;
+    transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+
+    .hot-deals .deals-container {
+        display: flex;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .hot-deals .deals-container .hot-deal {
+        margin: 20px 0;
+    }
+
+    .hot-deals .deals-container .rack-of-lamb {
+        height: 600px;
+    }
 }

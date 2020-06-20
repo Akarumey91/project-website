@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Exo+2:wght@400;700&display=swap');
+
+:root {
+    font-family: 'Exo 2', sans-serif;
+    --main-color: green;
+    --text-color: #f5f5c6;
+}
+
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+    color: var(--text-color);
+}
+
+/*Заголовок (header)*/
+header {
+    display: block;
+    background: linear-gradient(-3deg, #000, var(--main-color));
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    line-height: 45px;
+}
+
+header .header-logo {
+    font-family: 'Bad Script', cursive;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+header nav .top-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+header .header-logo a,
+header nav .top-menu li a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 10px;
+}
+
+header .btn {
+    font-size: 1.1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: 'Bad Script', cursive;
+}
+
+@media (min-width: 660px) {
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        padding: 35px 20px;
+    }
+
+    header .header-logo {
+        text-align: left;
+        padding-left: auto;
+    }
+
+    header nav .top-menu li {
+        margin: 0 5px;
+    }
+
+    header button {
+        padding: 0 5px;
+    }
+}
+
+@media (min-width: 810px) {
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        padding: 35px 20px;
+    }
+
+    header .header-logo {
+        text-align: left;
+        padding-left: auto;
+    }
+
+    header button {
+        padding: 0 5px;
+    }
+}
+
+/*Підвал (Footer)*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, #000000, #1E7115);
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 70px;
+}
+
+footer .footer-logo a,
+footer .phone a,
+footer .mail a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+footer .footer-logo {
+    font-family: 'Bad Script', cursive;
+    margin: 20px 0;
+}
+
+footer .footer-logo a {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+footer .social-pages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+footer .social-pages img {
+    max-width: 30px;
+    margin: 0 10px;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px 0;
+    }
+
+    footer .footer-logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    footer .phone {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    footer .social-pages {
+        grid-column: 2;
+        grid-row: 2;
+        justify-content: center;
+    }
+}

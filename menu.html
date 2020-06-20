@@ -1,94 +1,65 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Смачне-GO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header-with-footer.css">
 </head>
+
 <body>
     <header>
-        <h1><a href="index.html">Смачне-GO</a></h1>
+        <h1 class="header-logo"><a href="index.html">Смачне-GO</a></h1>
         <nav>
-            <ul>
+            <ul class="top-menu">
                 <li><a href="index.html">Головна</a></li>
                 <li><a href="menu.html">Меню</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
-        <input type="button" name="order-delivery" value="Замовити доставку">
+        <button type="button" class="btn btn-light">Замовити&nbsp;доставку</button>
     </header>
     <main>
-        <article>
+        <article class="wrapper-menu">
             <h2>Меню</h2>
-            <section class="ramens">
-                <h3>Рамен</h3>
-                <div class="pork-ramen">
-                    <h4>Рамен зі свининою</h4>
-                    <span>150 ₴</span>
-                    <p>
-                        М'ясний бульйон на основі місо, свинина Чашу,
-                        чорні гриби Муер, паростки Мун, яєчна локшина.
-                    </p>
-                </div>
-                <div class="shrimps-ramen">
-                    <h4>Рамен з креветками</h4>
-                    <span>210 ₴</span>
-                    <p>
-                        Ніжний та чистий м'ясний бульйон,
-                        смажені вонтони з креветками та фаршем, бейбі кукурудза.
-                    </p>
-                </div>
-            </section>
-            <section class="burgers">
-                <h3>Бургер</h3>
-                <div class="classic-burger">
-                    <h4>Бургер класичний</h4>
-                    <span>120 ₴</span>
-                    <p>
-                        Булка з сезамом, котлета з яловичини приготована на вугіллі з листям салату,
-                        соленим огірком, цибулею, помідором і соусом.
-                    </p>
-                </div>
-                <div class="vegeterian-burger">
-                    <h4>Бургер вегетеріанський</h4>
-                    <span>120 ₴</span>
-                    <p>
-                        Булка з сезамом,
-                        котлета з нуту приготована на вугіллі з листям салату,
-                        помідором, соленими огірками, цибулею та домашнім майонезом.
-                    </p>
-                </div>
-            </section>
-            <section class="pizza">
-                <h3>Піца</h3>
-                <div class="pizza-margarita">
-                    <h4>Маргарита</h4>
-                    <span>125 ₴</span>
-                    <p>
-                        Соус томатний, сир моцарела, помідори.
-                    </p>
-                </div>
-                <div class="pizza-quatro-formaggi">
-                    <h4>Квадро формаджі</h4>
-                    <span>155 ₴</span>
-                    <p>
-                        Соус вершковий, пармезан, сир моцарела, сир рікотта, сир дор блю, волоський горіх, груша.
-                    </p>
-                </div>
-            </section>
+            <div class="menu">
+                <h3><button class="ramen">Рамен</button></h3>
+                <h3><button class="burger">Бургер</button></h3>
+                <h3><button class="pizza">Піца</button></h3>
+            </div>
+            <div class="menu-container"></div>
         </article>
     </main>
     <footer>
-        <h2><a href="index.html">Смачне-GO</a></h2>
-        <section class="contacts">
+        <h2 class="footer-logo"><a href="index.html">Смачне-GO</a></h2>
+        <div class="phone">
             <h2>Телефонуйте нам</h2>
-            <a href="tel:+38 000 00 00 000">+38 000 00 00 000</a>
-            <h2>Пишіть нам</h2>
-            <a href="mailto:smachne-go@gmail.com">smachne-go@gmail.com</a>
+            <a href="tel:+380000000000">+38-000-00-00-000</a>
+        </div>
+        <div class="social-pages">
             <img src="img/facebook.png" alt="facebook">
             <img src="img/instagram.png" alt="instagram">
             <img src="img/youtube.png" alt="youtube">
-        </section>
+        </div>
+        <div class="mail">
+            <h2>Пишіть нам</h2>
+            <a href="mailto:smachne-go@gmail.com">smachne-go@gmail.com</a>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="js/menu.js"></script>
 </body>
+
 </html>

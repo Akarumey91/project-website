@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Смачне-GO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/header-with-footer.css">
+    <link rel="stylesheet" href="css/contacts.css">
 </head>
+
 <body>
     <header>
-        <h1><a href="index.html">Смачне-GO</a></h1>
+        <h1 class="header-logo"><a href="index.html">Смачне-GO</a></h1>
         <nav>
-            <ul>
+            <ul class="top-menu">
                 <li><a href="index.html">Головна</a></li>
                 <li><a href="menu.html">Меню</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
-        <input type="button" name="order-delivery" value="Замовити доставку">
+        <button type="button" class="btn btn-light">Замовити&nbsp;доставку</button>
     </header>
     <main>
-        <section>
+        <section class="map">
             <h2>Контакти</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.086313720518!2d24.02758974916723!3d49.840835691645026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6de6227133%3A0xd912df33f3469a4d!2z0L_RgNC-0YHQvy4g0KHQstC-0LHQvtC00YssIDEyLCDQm9GM0LLQvtCyLCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1590330847013!5m2!1sru!2sua"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.086313720518!2d24.02758974916723!3d49.840835691645026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6de6227133%3A0xd912df33f3469a4d!2z0L_RgNC-0YHQvy4g0KHQstC-0LHQvtC00YssIDEyLCDQm9GM0LLQvtCyLCDQm9GM0LLQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1sru!2sua!4v1590330847013!5m2!1sru!2sua"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
     </main>
     <footer>
-        <h2><a href="index.html">Смачне-GO</a></h2>
-        <section class="contacts">
+        <h2 class="footer-logo"><a href="index.html">Смачне-GO</a></h2>
+        <div class="phone">
             <h2>Телефонуйте нам</h2>
-            <a href="tel:+38 000 00 00 000">+38 000 00 00 000</a>
-            <h2>Пишіть нам</h2>
-            <a href="mailto:smachne-go@gmail.com">smachne-go@gmail.com</a>
+            <a href="tel:+380000000000">+38-000-00-00-000</a>
+        </div>
+        <div class="social-pages">
             <img src="img/facebook.png" alt="facebook">
             <img src="img/instagram.png" alt="instagram">
             <img src="img/youtube.png" alt="youtube">
-        </section>
+        </div>
+        <div class="mail">
+            <h2>Пишіть нам</h2>
+            <a href="mailto:smachne-go@gmail.com">smachne-go@gmail.com</a>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
