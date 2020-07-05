@@ -55,13 +55,6 @@ header nav .top-menu li a {
     margin: 10px;
 }
 
-header .btn {
-    font-size: 1.1rem;
-    border-radius: 30px;
-    font-weight: bold;
-    font-family: 'Bad Script', cursive;
-}
-
 @media (min-width: 660px) {
     header {
         display: grid;
