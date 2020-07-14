@@ -7,13 +7,33 @@ main {
 
 /* Банер (baner) */
 main .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 50px;
+    font-size: 3.3rem;
     font-family: 'Exo 2', sans-serif;
     color: var(--text-color);
     font-weight: bold;
+    text-shadow: 4px 4px 4px black;
 }
 
-main .carousel .carousel-inner .carousel-item {}
+.carousel-item.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-none {
+    display: flex !important;
+}
+
+.carousel-caption {
+    bottom: auto;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    main .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+        font-size: 2rem;
+    }
+}
 
 /* Розділ про нас (about us) */
 main .about-us {
@@ -90,7 +110,7 @@ main .hot-deals .hot-deal {
 
 main .hot-deals .burger {
     background: linear-gradient(41deg, #000000, #BE821B);
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 main .hot-deals .rack-of-lamb {
@@ -100,7 +120,7 @@ main .hot-deals .rack-of-lamb {
 
 main .hot-deals .ramen {
     background: linear-gradient(-32deg, #000000, #1E7115);
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
 }
 
 main .hot-deals img {
@@ -109,6 +129,7 @@ main .hot-deals img {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
 
 main .hot-deal h3 {
     font-size: 1.3rem;
@@ -125,6 +146,7 @@ main .hot-deal p {
     font-weight: bold;
     font-size: 1.2rem;
     line-height: 2rem;
+    min-height: 40px;
 }
 
 main .hot-deal button {
@@ -141,19 +163,30 @@ main .hot-deal button:hover {
     transition: 0.3s;
 }
 
-@media (min-width: 768px) {
-
+@media (min-width: 758px) {
     .hot-deals .deals-container {
         display: flex;
         padding: 30px;
         align-items: center;
     }
 
-    .hot-deals .deals-container .hot-deal {
-        margin: 20px 0;
+    main .hot-deals .hot-deal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 560px;
+        align-items: center;
+        margin: 0;
     }
 
     .hot-deals .deals-container .rack-of-lamb {
+        justify-content: space-between;
         height: 600px;
+        position: relative;
+        box-shadow: 0.5px 0.5px 50px rgba(255, 255, 255, 0.1);
+    }
+
+    main .hot-deal button {
+        width: 50%;
     }
 }
