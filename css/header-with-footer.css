@@ -28,6 +28,7 @@ header {
     text-align: center;
     padding: 20px;
     line-height: 45px;
+    text-shadow: 4px 4px 4px black;
 }
 
 header .header-logo {
@@ -55,13 +56,14 @@ header nav .top-menu li a {
     margin: 10px;
 }
 
+header .header-logo a:hover,
 header nav .top-menu li a:hover {
     color: #e2d411;
-    transition: 0.6s 0.6s;
-    text-shadow: 1px 1px 3px #000;
+    transition: 0.6s;
+    text-shadow: 1px 1px 3px rgb(131, 131, 131);
 }
 
-@media (min-width: 660px) {
+@media (min-width: 785px) {
     header {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -109,6 +111,7 @@ footer {
     text-align: center;
     font-family: 'Exo 2', sans-serif;
     line-height: 70px;
+    text-shadow: 4px 4px 4px black;
 }
 
 footer .footer-logo a,
@@ -118,6 +121,15 @@ footer .mail a {
     color: var(--text-color);
     font-size: 1.1rem;
 }
+
+footer .footer-logo a:hover,
+footer .phone a:hover,
+footer .mail a:hover {
+    color: #e2d411;
+    transition: 0.6s;
+    text-shadow: 1px 1px 3px rgb(131, 131, 131);
+}
+
 
 footer .footer-logo {
     font-family: 'Bad Script', cursive;

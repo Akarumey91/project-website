@@ -16,4 +16,6 @@ main .map iframe {
 
 main .map h2 {
     margin-top: 70px;
+    text-shadow: 4px 4px 4px black;
+    font-weight: bold;
 }

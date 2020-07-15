@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Смачне-GO</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/header-with-footer.css">
+    <link rel="stylesheet" href="css/modal-card.css">
 </head>
 
 <body>
@@ -21,17 +23,35 @@
                 <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
-        <button type="button" class="btn btn-light">Замовити&nbsp;доставку</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal"
+            data-target="#exampleModal">Замовити&nbsp;доставку</button>
     </header>
     <main>
         <article class="wrapper-menu">
             <h2>Меню</h2>
             <div class="menu">
-                <h3><button class="ramen">Рамен</button></h3>
-                <h3><button class="burger">Бургер</button></h3>
-                <h3><button class="pizza">Піца</button></h3>
+                <input type="radio" id="ramens" name="dishes" class="ramen" checked><label for="ramens">Рамен</label>
+                <input type="radio" id="burgers" name="dishes" class="burger"><label for="burgers">Бургер</label>
+                <input type="radio" id="pizzas" name="dishes" class="pizza"><label for="pizzas">Піца</label>
             </div>
-            <div class="menu-container"></div>
+            <div class="menu-container">
+                <div class="dish-container">
+                    <h4>Рамен зі свининою</h4>
+                    <span>150 ₴</span>
+                    <p>
+                        М'ясний бульйон на основі місо, свинина Чашу,
+                        чорні гриби Муер, паростки Мун, яєчна локшина.
+                    </p>
+                </div>
+                <div class="dish-container">
+                    <h4>Рамен з креветками</h4>
+                    <span>210 ₴</span>
+                    <p>
+                        Ніжний та чистий м'ясний бульйон,
+                        смажені вонтони з креветками та фаршем, бейбі кукурудза.
+                    </p>
+                </div>
+            </div>
         </article>
     </main>
     <footer>
