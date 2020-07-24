@@ -23,24 +23,33 @@ document.getElementById(
 
 // leftDate / 1000 / 24 / 60 / 60;
 function leftTime(date) {
-	let days = date / 24 / 60 / 60 / 1000;
-	let hours = date / 3600 / 1000;
-	let minutes = date / 60 / 1000;
-	let seconds = date / 24 / 1000;
-	let milisec = date / 1000;
-	// if ((seconds = 0)) {
-	// 	minutes--;
-	// }
-	// if ((minutes = 0)) {
-	// 	hours--;
-	// }
-	// if ((hours = 0)) {
-	// 	days--;
-	// }
-	return `${Math.trunc(days)} : ${hours} : ${minutes} : ${seconds}`;
-	// return `${time / 24 / 60 / 60} : ${time / 3600} : ${time / 60} : ${
-	// 	time / 24
-	// }`;
+	// let days = date / 24 / 60 / 60 / 1000;
+	// let hours = days * 24;
+	// let minutes = hours * 2.5;
+	// let seconds = minutes;
+	// return `${Math.trunc(days)} : ${hours} : ${minutes} : ${seconds}`;
+	let miliseconds = date;
+	let seconds = 0;
+	let minutes = 0;
+	let hours = 0;
+	let days = 0;
+	if ((miliseconds = 1000)) {
+		miliseconds -= 1000;
+		seconds++;
+	}
+	if ((seconds = 60)) {
+		seconds -= 60;
+		minutes++;
+	}
+	if ((minutes = 60)) {
+		minutes -= 60;
+		hours++;
+	}
+	if ((hours = 24)) {
+		hours -= 24;
+		days++;
+	}
+	console.log(`${days} : ${hours} : ${minutes} : ${seconds}`);
 }
 console.log(leftTime(leftDate));
-// console.log(leftDate);
+console.log(leftDate);
