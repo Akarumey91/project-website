@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header-with-footer.css">
     <link rel="stylesheet" href="css/modal-card.css">
+    <link rel="stylesheet" href="css/offer-timer.css">
 </head>
 
 <body>
@@ -95,8 +96,16 @@
         <section class="hot-deals">
             <h2>Гарячі пропозиції!!!</h2>
             <p>До закінчення пропозиції залишилось:</p>
-            <div class="offer-timer" id="timer"></div>
-            <div class="testing" id='test'></div>
+            <div class="offer-timer" id="timer">
+                <div class="left-time" id="days"></div>
+                <span>Дні</span>
+                <div class="left-time" id="hours"></div>
+                <span>Години</span>
+                <div class="left-time" id="minutes"></div>
+                <span>Хвилини</span>
+                <div class="left-time" id="seconds"></div>
+                <span>Секунди</span>
+            </div>
             <div class="deals-container">
                 <article class="hot-deal burger">
                     <h3>Бургер класичний</h3>

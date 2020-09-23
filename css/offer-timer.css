@@ -1,0 +1,18 @@
+main .hot-deals .offer-timer {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-content: center;
+}
+
+main .hot-deals .offer-timer span {
+    grid-row-start: 2;
+}
+
+main .hot-deals .offer-timer .left-time {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(228, 224, 6);
+    color: rgb(216, 8, 8);
+}

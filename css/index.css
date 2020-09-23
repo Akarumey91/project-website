@@ -95,6 +95,7 @@ main .hot-deals {
     background-position: center;
     background-size: cover;
     text-align: center;
+    line-height: 2.5rem;
 }
 
 main .hot-deals h2 {
@@ -113,21 +114,19 @@ main .hot-deals .hot-deal {
     text-align: center;
     margin: 20px;
     text-shadow: 4px 4px 4px black;
+    border-radius: 10px;
 }
 
 main .hot-deals .burger {
     background: linear-gradient(41deg, #000000, #BE821B);
-    border-radius: 10px 0 0 10px;
 }
 
 main .hot-deals .rack-of-lamb {
     background: linear-gradient(-53deg, #000000, #C51713);
-    border-radius: 10px;
 }
 
 main .hot-deals .ramen {
     background: linear-gradient(-32deg, #000000, #1E7115);
-    border-radius: 0 10px 10px 0;
 }
 
 main .hot-deals img {
@@ -186,7 +185,19 @@ main .hot-deal button:hover {
         margin: 0;
     }
 
-    .hot-deals .deals-container .rack-of-lamb {
+    main .hot-deals .burger {
+        border-radius: 10px 0 0 10px;
+    }
+
+    main .hot-deals .rack-of-lamb {
+        border-radius: 10px;
+    }
+
+    main .hot-deals .ramen {
+        border-radius: 0 10px 10px 0;
+    }
+
+    main .hot-deals .deals-container .rack-of-lamb {
         justify-content: space-between;
         height: 600px;
         position: relative;
